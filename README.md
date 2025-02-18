@@ -130,5 +130,5 @@
 ---
 
 ## Live Project
-Access the live project [here](https://ecommerce-m-2.onrender.com/).
+Access the live project [here](https://ecommerce.onrender.com/).
 
