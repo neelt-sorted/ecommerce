@@ -181,7 +181,7 @@ passport.deserializeUser(function (user, cb) {
 const stripe = require('stripe')(process.env.STRIPE_SERVER_KEY);
 
 server.post('/create-payment-intent', async (req, res) => {
-  const { totalAmount, orderId } = req.body;
+  let { totalAmount, orderId } = req.body;
   if(totalAmount > 1000){
     totalAmount = 89900
   }
