@@ -6,8 +6,8 @@ let transporter = nodemailer.createTransport({
   port: 587,
   secure: false, // true for 465, false for other ports
   auth: {
-    user: 'mrunknown6381', // gmail
-    pass: "qrdg djmk wwgm tfik", // pass
+    user: 'neeltopiwala2778', // gmail
+    pass: "eqfk brcd qwyz gtae", // pass
   },
 });
 
@@ -31,7 +31,7 @@ exports.cookieExtractor = function (req) {
 
 exports.sendMail = async function ({to, subject, text, html}){
     let info = await transporter.sendMail({
-        from: '"E-commerce" <mrunknown6381@gmail.com>', // sender address
+        from: '"E-commerce" <neeltopiwala2778@gmail.com>', // sender address
         to,
         subject,
         text,
